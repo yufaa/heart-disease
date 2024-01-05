@@ -12,7 +12,12 @@ df_final = pd.read_csv("final_data.csv")
 X = df_final.drop(["Unnamed: 0","target"], axis=1).values
 y = df_final['target'].values
 
-model = pickle.load(open("../model/rf_model.pkl", 'rb'))
+# model = pickle.load(open("model/rf_model.pkl", 'rb'))
+
+# Buka file model pkl dalam mode binary (rb: read binary)
+with open("model/rf_model.pkl", 'rb') as file:
+    # Muat model dari file
+    model = pickle.load(file)
 
 y_pred = model.predict(X)
 accuracy = accuracy_score(y, y_pred)
