@@ -1,7 +1,6 @@
 import itertools
 import pandas as pd
 import numpy as np
-# from imblearn.over_sampling import SMOTE
 from sklearn.metrics import accuracy_score
 import streamlit as st
 import time
@@ -12,7 +11,7 @@ df_final = pd.read_csv("final_data.csv")
 X = df_final.drop(["Unnamed: 0","target"], axis=1).values
 y = df_final['target'].values
 
-model = pickle.load(open("../model/rf_model.pkl", 'rb'))
+model = pickle.load(open("model/rf_model.pkl", 'rb'))
 
 y_pred = model.predict(X)
 accuracy = accuracy_score(y, y_pred)
