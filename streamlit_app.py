@@ -7,7 +7,7 @@ import streamlit as st
 import time
 import pickle
 
-df_final = pd.read_csv(r"C:\FileD\Github\Bimbingankarir\Bimbingankarir\final_data.csv")
+df_final = pd.read_csv("final_data.csv")
 
 X = df_final.drop(["Unnamed: 0","target"], axis=1).values
 y = df_final['target'].values
