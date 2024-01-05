@@ -18,7 +18,6 @@ accuracy = accuracy_score(y, y_pred)
 accuracy = round((accuracy * 100), 2)
 
 
-
 # STREAMLIT
 st.set_page_config(
   page_title = "Hungarian Heart Disease",
