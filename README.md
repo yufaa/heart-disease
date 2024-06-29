@@ -2,7 +2,6 @@
 
 ## Technical Report
 
-### Business Understanding
 
 #### Problem Statement
 
@@ -39,7 +38,7 @@ Only 14 attributes used:
       13. #51 (thal)      
       14. #58 (num)
 
-### Alur Klasifikasi
+### Methodology
 
 1. **Data Collection:** Gather the dataset from the UCI repository.
 2. **Data Preprocessing:** Handle missing values, encode categorical variables, imbalance handling, normalize features.
@@ -73,7 +72,7 @@ Only 14 attributes used:
 - **F1 Score:** The model had the highest F1-score of 92%.
 
 
-### 1.8 Kesimpulan
+### Conclution
 
 From the experiment above, it can be concluded that the average accuracy of the machine learning model for the heart disease dataset is 92%.
 For the KNN algorithm, the highest accuracy is 92% using data that has been SMOTEed, normalized and tuned to the model.
